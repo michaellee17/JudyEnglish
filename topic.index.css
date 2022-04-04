@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    margin: 20px;
+    width: 250px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.name {
+    width: 100%;
+}
+
+.meun {
+    width: 1190px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-meun {
+    font-size: 36px;
+    box-shadow: 8px 8px 2px rgb(253 151 83 / 91%), -8px -8px 2px rgb(37 212 212 / 89%);
+}
+
+.main-meun a {
+    text-decoration: none;
+    color: rgb(113, 227, 255);
+}
+
+h1 {
+    font-size: 44px;
+    text-align: center;
+    background-color: rgb(113, 227, 255);
+}
+
+.life {
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.life-photo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.lesson img,
+.student img,
+.enviroment img,
+.book img {
+    height: 150px;
+    width: 250px;
+    margin: 20px;
+}
+
+.news {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.latest-events {
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgb(195, 231, 247);
+    width: 400px;
+    margin-right: 150px;
+    font-size: 32px;
+}
+
+.boss {
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+}
+
+.speech {
+    width: 70%;
+    background-color: rgb(195, 231, 247);
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.boss_photo img {
+    width: 300px;
+    height: 500px;
+}
+
+.members,
+.subject {
+    padding-top: 80px;
+    background-color: rgb(255, 255, 255);
+    width: 1440px;
+}
+
+.teacher,
+.hots {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+}
+
+.col img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.col:hover {
+    opacity: 2;
+}
+
+.col {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+}
+
+.col:nth-child(odd) {
+    position: relative;
+    bottom: 80px;
+}
+
+.footer {
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.address {
+    background-color: (113, 227, 255);
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 8px 8px 2px rgb(253 151 83 / 91%), -8px -8px 2px rgb(37 212 212 / 89%);
+    height: 100px;
+    padding: 10px;
+}
+
+.media {
+    display: flex;
+    width: 130px;
+    margin-left: 70px;
+    font-size: 24px;
+    margin-bottom: 80px;
+    padding: 10px;
+    box-shadow: 8px 8px 2px rgb(253 151 83 / 91%), -8px -8px 2px rgb(37 212 212 / 89%);
+}
+
+.main_lesson {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+}
+
+.chinese,
+.english,
+.math {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+.main_lesson .chinese a {
+    align-items: flex-end;
+}
+
+.personal {
+    padding-top: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+}
+
+.personal-section {
+    display: flex;
+}
+
+.personal-feautre {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.analysis {
+    text-align: center;
+    width: 30%;
+}
+
+button {
+    color: black;
+    border-radius: 6px;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.spot {
+    text-align: center;
+    margin: 15px;
+    font-size: 28px;
+    position: relative;
+    bottom: 30px;
+    font-style: italic;
+}
+
+.slogan {
+    width: 100%;
+}
+
+.slogan img {
+    width: 100%;
+}
+
+.english {
+    position: relative;
+    left: 80px;
+}
+
+.subject-info {
+    margin: 10px;
+}
+
+.adv {
+    position: fixed;
+}
+
+.english,
+.chinese,
+.math {
+    width: 70%;
+}
+
+.main_lesson {
+    align-items: center;
+}
+
+.col {
+    padding: 30px;
+}
+
+.indiviual {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.indiviual img {
+    width: 60%;
+}
+
+.card-photo img {
+    border-radius: 50%;
+}
+
+.indiviaul-section {
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.card-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.indiviaul-feature {
+    box-shadow: 8px 8px 2px rgb(253 151 83 / 91%), -8px -8px 2px rgb(37 212 212 / 89%);
+    max-width: 380px;
+    width: 60%;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.infro {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.target {
+    margin-bottom: 60px;
+}
+
+.target-case {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.gifted,
+.slow {
+    width: 20%;
+    position: relative;
+    border: 4px solid rgb(255, 115, 0);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.gifted-tag,
+.slow-tag {
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    background-color: aqua;
+    font-size: 28px;
+    border: 4px solid rgb(255, 115, 0);
+}
+
+.gifted-photo img,
+.slow-photo img {
+    width: 100%;
+}
+
+.fee {
+    margin-bottom: 60px;
+}
+
+.fee-section,
+.fee_onsale {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.plan,
+.onsale {
+    border: 4px solid rgb(231, 98, 9);
+    text-align: center;
+}
+
+.plan-title,
+.onsale_title {
+    padding: 20px;
+    background-color: aqua;
+}
+
+.plan-text,
+.onsale_text {
+    padding: 20px;
+    border-top: 4px solid rgb(231, 98, 9);
+}
+
+.our {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    background-image: linear-gradient(120deg, transparent 80%, aqua 10%);
+    margin-left: 30px;
+}
+
+.our-logo img {
+    width: 250px;
+}
+
+.our-text {
+    width: 20%;
+}
+
+.spirit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    background-image: linear-gradient(120deg, rgb(252, 138, 31) 20%, transparent 10%);
+}
+
+.spirit img {
+    width: 300px;
+}
+
+.goal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    background-image: linear-gradient(120deg, transparent 80%, aqua 10%);
+}
+
+.goal img {
+    width: 400px;
+}
+
+.keep {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    background-image: linear-gradient(120deg, rgb(252, 138, 31) 20%, transparent 10%);
+}
+
+.keep img {
+    width: 500px;
+}
+
+.reserve {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.reserve-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reserve-input {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 3px solid rgb(250, 108, 14);
+}
+
+.head-teacher {
+    width: 30%;
+    text-align: center;
+    margin-top: 40px;
+    border: 20px solid aqua;
+    border-radius: 10%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.head-teacher.photo {
+    width: 300px;
+}
+
+.head-teacher-speech {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.head-teacher-title {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.why_section,
+.prepare_section,
+.experience_section {
+    display: flex;
+    margin: 20px;
+}
+
+.why_text,
+.prepare_text,
+.experience_text {
+    margin: 10px;
+    width: 400px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.toeic {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.why,
+.experience {
+    position: relative;
+    left: 120px;
+}
+
+.plan,
+.onsale {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.timetable_title {
+    text-align: center;
+}
+
+.timetable_text {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.classtable {
+    border-collapse: separate;
+    border: 3px solid rgb(20, 154, 243);
+}
+
+.footer_meun {
+    margin-right: 80px;
+    margin-bottom: 80px;
+    box-shadow: 8px 8px 2px rgb(253 151 83 / 91%), -8px -8px 2px rgb(37 212 212 / 89%);
+    padding: 10px;
+}
+
+.footer_meun a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.prepare_section {
+    flex-flow: row-reverse;
+}
+
+.countdown {
+    display: flex;
+    position: absolute;
+    left: 50px;
+}
+
+.junior,
+.senior,
+.senior2 {
+    width: 80px;
+    border: 3px solid rgb(235, 107, 2);
+    height: 40px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.junior i,
+.senior i,
+.senior2 i {
+    font-size: 32px;
+    font-weight: bolder;
+    color: red
+}
+
+.boss {
+    position: relative;
+}

@@ -598,3 +598,7 @@
         border: 3px solid rgb(243, 124, 12);
         margin: 10px;
     }
+    
+    .first_place {
+        margin-left: 60px;
+    }

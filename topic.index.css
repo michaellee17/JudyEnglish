@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.header {
+    position: relative;
+}
+
 .nav {
     width: 100%;
     display: flex;
@@ -110,6 +114,7 @@ h1 {
     padding-top: 80px;
     background-color: rgb(255, 255, 255);
     width: 1440px;
+    padding-bottom: 40px;
 }
 
 .teacher,
@@ -330,7 +335,7 @@ button {
     position: absolute;
     top: -20px;
     left: -40px;
-    background-color: aqua;
+    background-color: rgb(113, 227, 255);
     font-size: 28px;
     border: 4px solid rgb(255, 115, 0);
 }
@@ -360,7 +365,7 @@ button {
 .plan-title,
 .onsale_title {
     padding: 20px;
-    background-color: aqua;
+    background-color: rgb(113, 227, 255);
 }
 
 .plan-text,
@@ -466,6 +471,19 @@ button {
     padding-bottom: 10px;
 }
 
+.why_title,
+.prepare_title,
+.experience_title {
+    box-shadow: 8px 8px 2px rgb(253 151 83 / 91%), -8px -8px 2px rgb(37 212 212 / 89%);
+    width: 200px;
+}
+
+.why,
+.prepare,
+.experience {
+    margin-top: 40px;
+}
+
 .why_section,
 .prepare_section,
 .experience_section {
@@ -478,7 +496,7 @@ button {
 .experience_text {
     margin: 10px;
     width: 400px;
-    margin-left: 20px;
+    margin-left: 40px;
     align-self: center;
 }
 

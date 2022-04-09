@@ -40,7 +40,7 @@
 
 .main-meun a {
     text-decoration: none;
-    color: rgb(113, 227, 255);
+    color: black;
 }
 
 h1 {
@@ -139,7 +139,7 @@ h1 {
 .col {
     width: 300px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 5px rgb(14, 13, 13);
     border-radius: 10px;
 }
 
@@ -254,6 +254,8 @@ button {
 
 .adv {
     position: fixed;
+    right: 0;
+    z-index: 1;
 }
 
 .english,
@@ -279,7 +281,7 @@ button {
 }
 
 .indiviual img {
-    width: 60%;
+    width: 40%;
 }
 
 .card-photo img {
@@ -309,6 +311,7 @@ button {
 .infro {
     margin-bottom: 30px;
     margin-top: 50px;
+    width: 100%;
 }
 
 .target {
@@ -346,7 +349,9 @@ button {
 }
 
 .fee {
-    margin-bottom: 60px;
+    padding-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .fee-section,
@@ -354,6 +359,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
+    width: 100%;
 }
 
 .plan,
@@ -542,7 +548,7 @@ button {
 
 .footer_meun a {
     text-decoration: none;
-    color: aqua;
+    color: black;
 }
 
 .prepare_section {

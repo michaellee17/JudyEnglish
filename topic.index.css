@@ -5,6 +5,7 @@
 
 .header {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .main-header {
@@ -176,6 +177,12 @@ h1 {
     background-color: rgb(113, 227, 255);
 }
 
+@media screen and (max-width:575px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
 .life {
     display: flex;
     width: 100%;
@@ -210,9 +217,16 @@ h1 {
     text-align: center;
     border-radius: 5%;
     background-color: rgb(195, 231, 247);
-    width: 400px;
+    width: 600px;
     margin-right: 150px;
     font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.latest-events i {
+    color: #fa0;
 }
 
 @media screen and (max-width:1399px) {
@@ -259,7 +273,6 @@ h1 {
     margin: 20px;
     padding: 20px;
     align-items: center;
-    ;
 }
 
 .junior i,
@@ -435,9 +448,11 @@ button {
     }
     .personal-picture {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .personal-picture img {
-        width: 100%;
+        width: 70%;
     }
     .personal-section {
         flex-wrap: wrap;
@@ -700,6 +715,7 @@ button {
 
 .spirit img {
     width: 300px;
+    object-fit: cover;
 }
 
 .goal {
@@ -710,7 +726,8 @@ button {
 }
 
 .goal img {
-    width: 400px;
+    width: 600px;
+    object-fit: cover;
 }
 
 .keep {
@@ -737,18 +754,17 @@ button {
 }
 
 .reserve-input {
-    width: 30%;
     display: flex;
     justify-content: center;
-    padding: 10px;
     border: 3px solid rgb(250, 108, 14);
+    box-sizing: border-box;
 }
 
 .head-teacher {
     width: 30%;
     text-align: center;
     margin-top: 40px;
-    border: 20px solid aqua;
+    border: 20px solid rgb(113, 227, 255);
     border-radius: 10%;
     padding: 10px;
     margin-bottom: 30px;
@@ -819,6 +835,14 @@ button {
 
 .timetable_title {
     text-align: center;
+}
+
+td:nth-child(odd) {
+    background-color: rgb(113, 227, 255);
+}
+
+td:nth-child(even) {
+    background-color: rgb(231, 231, 231);
 }
 
 .timetable_text {
@@ -921,4 +945,5 @@ button {
 .education_photo,
 .place_photo {
     margin-bottom: 20px;
+    object-fit: cover;
 }

@@ -102,30 +102,30 @@
              width: 150px;
          }
          .hb {
-             width: 80px;
-             height: 80px;
+             width: 40px;
+             height: 40px;
              background-color: rgb(253 151 83 / 91%);
              position: relative;
              margin-right: 30px;
          }
          .hb span {
              position: absolute;
-             width: 72px;
-             height: 4px;
+             width: 36px;
+             height: 2px;
              background-color: #fff;
              left: 0;
              right: 0;
              margin: auto;
          }
          .hb span:first-child {
-             top: 22px;
+             top: 11px;
          }
          .hb span:nth-child(2) {
              top: 0;
              bottom: 0;
          }
          .hb span:last-child {
-             bottom: 22px;
+             bottom: 11px;
          }
          .main-meun {
              box-shadow: none;
@@ -160,7 +160,7 @@
              z-index: -1;
          }
          #menu-switch:checked~.header .main-header .hb span:first-child {
-             top: 38px;
+             top: 19px;
              transform: rotate(405deg);
              transition: top .3s, transform .3s .3s;
          }
@@ -268,19 +268,21 @@
      .countdown {
          display: flex;
          position: absolute;
-         left: 50px;
+         bottom: 0;
+         right: 400px;
          text-align: center;
      }
      
      .junior,
      .senior,
      .senior2 {
+         background-color: rgb(230, 227, 227);
          width: 80px;
-         border: 3px solid rgb(235, 107, 2);
          height: 40px;
          margin: 20px;
          padding: 20px;
          align-items: center;
+         border-radius: 20%;
      }
      
      .junior i,
@@ -288,7 +290,7 @@
      .senior2 i {
          font-size: 32px;
          font-weight: bolder;
-         color: red
+         color: rgb(62, 175, 245)
      }
      
      @media screen and (max-width:1199px) {
@@ -305,7 +307,7 @@
          .junior,
          .senior,
          .senior2 {
-             width: 5%;
+             width: 80px;
              height: 90px;
          }
          .junior i,
@@ -715,6 +717,28 @@
          padding-bottom: 50px;
          width: 100%;
          margin: 0 auto;
+     }
+     
+     .flag {
+         width: 120px;
+         height: 120px;
+         text-align: center;
+         line-height: 120px;
+         position: relative;
+         background-color: #fa0;
+         color: #fFF;
+     }
+     
+     .flag::after {
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 100%;
+         width: 0;
+         height: 0;
+         border-left: 60px solid #fa0;
+         border-right: 60px solid #fa0;
+         border-bottom: 30px solid #0000;
      }
      
      .fee-section,

@@ -204,13 +204,11 @@
          background-color: rgb(255, 255, 255);
      }
      
-     .lesson img,
-     .student img,
-     .enviroment img,
-     .book img {
-         height: 150px;
-         width: 250px;
+     .lesson img {
+         width: 100%;
          margin: 20px;
+         margin-left: 100px;
+         border-radius: 5%;
      }
      
      .news {
@@ -322,6 +320,19 @@
              left: 10px;
              width: 3%;
          }
+     }
+     
+     .owl-theme .item {
+         height: 10rem;
+         background: #f8fafa;
+         padding: 1rem;
+     }
+     
+     .owl-carousel .item h4 {
+         color: #fff;
+         font-weight: 400;
+         font-size: 1.4375rem;
+         margin-top: 0rem;
      }
      
      .members,

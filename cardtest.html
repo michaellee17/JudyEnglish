@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/85c9d9547b.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .card {
+        width: 30%;
+        margin-left: 20px;
+        position: relative;
+    }
+    
+    .card img {
+        width: 100%;
+    }
+    
+    .card i {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="card_content">
+            <img src="/picture/a1.png" class="small" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente recusandae in maxime necessitatibus a corrupti voluptatum. Nesciunt, deleniti eligendi! Praesentium veritatis sint nobis voluptatem ab eligendi maiores molestias adipisci quo.
+        </div>
+        <div class="card_btn">
+            <i class="fa-solid fa-clone"></i>
+
+        </div>
+    </div>
+    <script>
+        function showSmall() {
+            small = getElementsByClassName("small");
+            small.style.width = 20 + "px";
+        }
+
+        function init() {
+            let img = document.getElementsByClassName("fa-solid fa-clone");
+            img.onclick = showSmall;
+        }
+
+        window.addEventListener("load", init, false);
+    </script>
+</body>
+
+</html>

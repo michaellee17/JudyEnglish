@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
 
     <script src="jquery-3.6.0.js"></script>
-    <script src="owl.carousel.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
 
@@ -264,10 +265,11 @@
         $('.owl-carousel').owlCarousel({
             loop: true,
             autoplay: true,
-            autoplayTimeout: 1000,
+            autoplayTimeout: 2000,
             autoplayHoverPause: true,
             margin: 10,
-            nav: true,
+            nav: false,
+            dots: false,
             responsive: {
                 0: {
                     items: 1

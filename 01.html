@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="csshake.css">
     <script src="https://kit.fontawesome.com/85c9d9547b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="jquery-3.6.0.js"></script>
 
 
 
@@ -80,7 +81,9 @@
         </div>
     </div>
 </div>
+
 <div class="timetable">
+    <div id="theDiv"></div>
     <div class="timetable_title">
         <h2>本班課表</h2>
     </div>
@@ -101,25 +104,25 @@
                 <td colspan="5" align="center
                 ">未開放</td>
 
-                <td>高三英文</td>
-                <td>國二數學</td>
+                <td class="textHover" data-text="老師:Judy 進度:歷屆試題分析">高三英文</td>
+                <td class="textHover" data-text="老師:赫哲 進度:歷屆試題分析">國二數學</td>
             </tr>
             <tr>
                 <td>1330-1630</td>
                 <td colspan="5" align="center">課業輔導</td>
 
-                <td>高一國文</td>
-                <td>國三數學</td>
+                <td class="textHover" data-text="老師:陳滔 進度:歷屆試題分析">高一國文 </td>
+                <td class="textHover" data-text="老師:赫哲 進度:歷屆試題分析">國三數學</td>
             </tr>
             <tr>
                 <td>1800-2100</td>
-                <td>國二數學</td>
-                <td>高一國文</td>
-                <td>高三國文</td>
-                <td>國一國文</td>
-                <td>國一數學</td>
-                <td>高一國文</td>
-                <td>國三數學</td>
+                <td class="textHover" data-text="老師:赫哲 進度:歷屆試題分析">國二數學</td>
+                <td class="textHover" data-text="老師:陳滔 進度:歷屆試題分析">高一國文</td>
+                <td class="textHover" data-text="老師:陳滔 進度:歷屆試題分析">高三國文</td>
+                <td class="textHover" data-text="老師:陳滔 進度:歷屆試題分析">國一國文</td>
+                <td class="textHover" data-text="老師:赫哲 進度:歷屆試題分析">國一數學</td>
+                <td class="textHover" data-text="老師:Judy 進度:歷屆試題分析">高一國文</td>
+                <td class="textHover" data-text="老師:赫哲 進度:歷屆試題分析">國三數學</td>
             </tr>
         </table>
     </div>
@@ -153,6 +156,25 @@
     </div>
 </div>
 <script>
+    $(function() {
+        // 偵測螢幕上的 x 和 y 座標
+        // $('.textHover').mousemove(function(e){
+        // 	$('#theDiv').show().text(`X: ${e.clientX} | Y: ${e.clientY}`);
+        // });
+
+        // $('.textHover').mousemove().mouseout()
+
+        $('.textHover').mousemove(function(e) {
+            let theText = $(this).attr('data-text');
+
+            $('#theDiv').text(theText).show().css({
+                left: e.clientX,
+                top: e.clientY,
+            })
+        }).mouseout(function() {
+            $('#theDiv').hide();
+        });
+    });
     AOS.init();
 </script>
 

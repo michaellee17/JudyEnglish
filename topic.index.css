@@ -937,7 +937,7 @@
                   }
                   
                   td:nth-child(even) {
-                      background-color: rgb(231, 231, 231);
+                      background-color: rgb(249, 246, 246);
                   }
                   
                   .timetable_text {
@@ -945,6 +945,23 @@
                       justify-content: center;
                       margin-top: 30px;
                       margin-bottom: 40px;
+                  }
+                  
+                  .timetable {
+                      position: relative;
+                  }
+                  
+                  #theDiv {
+                      border: 1px solid #ccc;
+                      color: #fff;
+                      padding: 5px;
+                      background-color: rgb(250, 190, 87);
+                      position: absolute;
+                      display: none;
+                  }
+                  
+                  .textHover {
+                      cursor: pointer;
                   }
                   
                   .classtable {

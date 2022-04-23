@@ -62,7 +62,7 @@
                     <li>高三</li>
                 </ul>
             </li>
-            <li class="color-red">
+            <li class="color-blue">
                 <div class="main">英文</div>
                 <ul class="subs">
                     <li>國一</li>
@@ -73,7 +73,7 @@
                     <li>高三</li>
                 </ul>
             </li>
-            <li class="color-yellow">
+            <li class="color-blue">
                 <div class="main">數學</div>
                 <ul class="subs">
                     <li>國一</li>
@@ -84,7 +84,7 @@
                     <li>高三</li>
                 </ul>
             </li>
-            <li class="color-green">
+            <li class="color-blue">
                 <div class="main">進階班先修班</div>
                 <ul class="subs">
                     <li>國文銜接班</li>
@@ -228,12 +228,12 @@
 <script>
     $(function() {
         $('ul.subs').hide()
-        $('div.main').click(function() {
+        $('.main').click(function() {
                 $('ul.subs').slideUp()
-                $('div.main').removeClass('open')
+                
                 if ($('+ul', this).css('display') == 'none') {
                     $('+ul', this).slideDown()
-                    $(this).addClass('open')
+                    
                 }
             })
             .mouseover(function() {

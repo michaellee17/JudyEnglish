@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            width: 100%;
+            margin: 30px auto;
+            display: flex;
+        }
+        
+        #nav {
+            width: 30%;
+            margin-right: 30px;
+        }
+        
+        #nav li {
+            list-style: none;
+        }
+        
+        .main {
+            width: 100%;
+            line-height: 60px;
+            background-color: #3FC6F3;
+            border-right: 10px solid #0D9BE5;
+            cursor: pointer;
+            font-size: 24px;
+            padding-left: 10px;
+        }
+        
+        ul.subs li {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 25px;
+            background-color: #F5F5F5;
+            border-right: 10px solid #0D9BE5;
+            font-size: 16px;
+            color: #164158;
+            cursor: pointer;
+        }
+        
+        .introduce div {
+            margin: 30px auto;
+            width: 70%;
+            height: 200px;
+            background: #F2F2F2;
+            border: 3px solid rgb(255, 136, 0);
+            ;
+            display: none;
+            padding: 15px;
+        }
+        
+        .introduce div:first-child {
+            display: block;
+        }
+    </style>
+    <script src="jquery-3.6.0.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="nav">
+            <ul>
+                <li class="color-blue">
+                    <div class="main">國文</div>
+                    <ul class="subs">
+                        <li class="pre">國一</li>
+                        <li>國二</li>
+                        <li>國三</li>
+                        <li>高一</li>
+                        <li>高二</li>
+                        <li>高三</li>
+                    </ul>
+                </li>
+                <li class="color-red">
+                    <div class="main">英文</div>
+                    <ul class="subs">
+                        <li>國一</li>
+                        <li>國二</li>
+                        <li>國三</li>
+                        <li>高一</li>
+                        <li>高二</li>
+                        <li>高三</li>
+                    </ul>
+                </li>
+                <li class="color-yellow">
+                    <div class="main">數學</div>
+                    <ul class="subs">
+                        <li>國一</li>
+                        <li>國二</li>
+                        <li>國三</li>
+                        <li>高一</li>
+                        <li>高二</li>
+                        <li>高三</li>
+                    </ul>
+                </li>
+                <li class="color-green">
+                    <div class="main">進階班先修班</div>
+                    <ul class="subs">
+                        <li>國文銜接班</li>
+                        <li>多益高分班</li>
+                        <li>數學資優班</li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="introduce">
+            <div>
+                <h2>陳滔國文</h2>
+                <p>累積二十年補教經驗的超強師資團隊，每人各司其職，身懷絕技。收集歷屆考題、海峽二岸题型變化，加以研究分析歸納。完全貼近並鎖定大考趨勢的教學密技，別人準備沒範圍。
+            </div>
+            <div>
+                <h2>飛哥英文</h2>
+                <p>擁有訓練嚴格的教學團隊，不僅熟習教材、發音正確，更能掌握教學及考試重點。 國中部設有輔導讀書時段，針對學校範圍練習，同年級的學習問題也一併解答。 高中部安排輔導老師駐點，無論英文學習、升學經驗，全面為同學解惑。</p>
+            </div>
+            <div>
+                <h2>赫哲數學</h2>
+                <p>其實從近年來的高中數學學測命題趨勢就不難看出端倪。繁雜的計算、神乎其技的解題技巧，逐漸地消失在我們眼前，而基礎觀念的延伸應用，需要讀題正確性的各類題型，更如雨後春筍般地出現在我們的視野中。也就是說，走邏輯推演、重理性思考的命題方向，已經變成我們老師以及學生在高中數學上不可忽視的準備目標。</p>
+
+            </div>
+            <div>
+                <h2>陳滔國文</h2>
+                <p>累積二十年補教經驗的超強師資團隊，每人各司其職，身懷絕技。收集歷屆考題、海峽二岸题型變化，加以研究分析歸納。完全貼近並鎖定大考趨勢的教學密技，別人準備沒範圍。
+            </div>
+            <div>
+                <h2>飛哥英文</h2>
+                <p>擁有訓練嚴格的教學團隊，不僅熟習教材、發音正確，更能掌握教學及考試重點。 國中部設有輔導讀書時段，針對學校範圍練習，同年級的學習問題也一併解答。 高中部安排輔導老師駐點，無論英文學習、升學經驗，全面為同學解惑。</p>
+            </div>
+            <div>
+                <h2>赫哲數學</h2>
+                <p>其實從近年來的高中數學學測命題趨勢就不難看出端倪。繁雜的計算、神乎其技的解題技巧，逐漸地消失在我們眼前，而基礎觀念的延伸應用，需要讀題正確性的各類題型，更如雨後春筍般地出現在我們的視野中。也就是說，走邏輯推演、重理性思考的命題方向，已經變成我們老師以及學生在高中數學上不可忽視的準備目標。</p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        $(function() {
+            $('ul.subs').hide()
+            $('div.main').click(function() {
+                    $('ul.subs').slideUp()
+                    $('div.main').removeClass('open')
+                    if ($('+ul', this).css('display') == 'none') {
+                        $('+ul', this).slideDown()
+                        $(this).addClass('open')
+                    }
+                })
+                .mouseover(function() {
+                    $(this).addClass('rollover')
+                })
+                .mouseout(function() {
+                    $(this).removeClass('rollover')
+                })
+        })
+    </script>
+    <script>
+        $(function() {
+            $('.subs li').click(function() {
+                $(this).addClass('pre').siblings().removeClass('pre');
+                var index = $(this).index();
+                $(".introduce div").eq(index).show().siblings().hide();
+            });
+
+        });
+    </script>
+</body>
+
+</html>

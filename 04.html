@@ -50,34 +50,46 @@
         <div class="reserve-section">
             <div class="reserve-input">
                 <table width="500px" height="300px">
-                    <tr>
-                        <td>姓名</td>
-                        <td><input type="text" placeholder="請輸入姓名"></td>
+                    <form>
+                        <tr>
+                            <td>姓名</td>
+                            <td><input type="text" placeholder="請輸入姓名" id="name"></td>
 
-                    </tr>
-                    <tr>
-                        <td>學校</td>
-                        <td><input type="text" placeholder="請輸入校名"></td>
+                        </tr>
+                        <tr>
+                            <td>學校</td>
+                            <td><input type="text" placeholder="請輸入校名"></td>
 
-                    </tr>
-                    <tr>
-                        <td>年級</td>
-                        <td><input type="text" placeholder="請輸入年級"></td>
+                        </tr>
+                        <tr>
 
-                    </tr>
-                    <tr>
+                            <td>電話</td>
+                            <td><input id="phone" type="text" placeholder="請輸入電話"></td>
 
-                        <td>電話</td>
-                        <td><input type="text" placeholder="請輸入電話"></td>
+                        </tr>
+                        <tr>
+                            <td>年級</td>
+                            <td>
+                                <select id="grade">
+                                <option>年級</option>
+                                <option>國一</option>
+                                <option>國二</option>
+                                <option>國三</option>
+                                <option>高一</option>
+                                <option>高二</option>
+                                <option>高三</option>
+                                
+                            </select>
+                            </td>
+                        </tr>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            想了解的科目
-                        </td>
-                        <td>
+                        <tr>
+                            <td>
+                                想了解的科目
+                            </td>
+                            <td>
 
-                            <select>
+                                <select id="subject">
                             <option>科目名稱</option>
                             <option>國文</option>
                             <option>英文</option>
@@ -89,14 +101,15 @@
                             
                             
                         </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
 
-                        </td>
-                        <td><input type="submit" value="送出資料"></td>
-                    </tr>
+                            </td>
+                            <td><input type="submit" value="送出資料" id="btnSend"></td>
+                        </tr>
+                    </form>
                 </table>
             </div>
             <div class="head-teacher">
@@ -148,6 +161,66 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function checkForm() {
+            let name = $("name");
+
+            let phone = $("phone");
+
+            let grade = $("grade");
+
+
+            let subject = $("subject");
+
+            if (name.value.length < 2) {
+                alert("名子不能少於兩個字");
+
+                return;
+            }
+
+            if (phone.value.length != 10) {
+                alert("手機號碼有錯");
+
+                return;
+            }
+
+            if (grade.selectedIndex == 0) {
+                alert("年級一定要選");
+                return;
+            }
+
+
+
+
+
+            if (subject.selectedIndex == 0) {
+                alert("科目一定要選");
+                return;
+            }
+            alert("資料正確，我們會盡快跟您聯絡!")
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+        window.addEventListener("load", function() {
+            document.getElementById("btnSend").onclick = checkForm;
+        });
+    </script>
+
+
 
 </body>
 

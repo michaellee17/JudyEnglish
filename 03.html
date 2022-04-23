@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="csshake.css">
-    <script src="jsLogin.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+
 
 </head>
 
@@ -80,12 +81,35 @@
                 <h2>本班位置</h2>
             </div>
             <div class="place_section">
-                <div class="place_text" data-aos="zoom-in-left">
-                    <h3>淡水本部</h3>
-                    <p>地址:新北市淡水區新市一路三段101巷98號1樓</p>
-                    <p>電話:02-4675421</p>
-                    <p>營業時間:平日下午兩點到晚上十點</p>
-                    <p>營業時間:假日早上九點到晚上八點</p>
+                <div class="tab-menu">
+                    <ul>
+                        <li class="active">淡水本部</li>
+                        <li>北市分校</li>
+                        <li>台中分校</li>
+                    </ul>
+                </div>
+                <div class="tab-con">
+                    <div>
+                        <h3>淡水本部</h3>
+                        <p>地址:新北市淡水區新市一路三段101巷98號1樓</p>
+                        <p>電話:02-4675421</p>
+                        <p>營業時間:平日下午兩點到晚上十點</p>
+                        <p>營業時間:假日早上九點到晚上八點</p>
+                    </div>
+                    <div>
+                        <h3>北市分校</h3>
+                        <p>地址:台北市中山區衡陽街51號4樓</p>
+                        <p>電話:02-4675421</p>
+                        <p>營業時間:平日下午兩點到晚上十點</p>
+                        <p>營業時間:假日早上九點到晚上八點</p>
+                    </div>
+                    <div>
+                        <h3>台中分校</h3>
+                        <p>地址:台中市西屯區台灣大道三段99號</p>
+                        <p>電話:02-4675421</p>
+                        <p>營業時間:平日下午兩點到晚上十點</p>
+                        <p>營業時間:假日早上九點到晚上八點</p>
+                    </div>
                 </div>
                 <div class="place_photo" data-aos="zoom-out-up"><img src="./picture/our3.jpg" alt="教室圖"></div>
             </div>
@@ -124,6 +148,15 @@
         </div>
 
         <script>
+            $(function() {
+                $('.tab-menu li').click(function() {
+                    $(this).addClass('active').siblings().removeClass('active');
+                    var index = $(this).index();
+                    $(".tab-con div").eq(index).show().siblings().hide();
+                });
+
+            });
+
             AOS.init();
         </script>
 </body>

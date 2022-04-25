@@ -95,7 +95,7 @@
        .header {
            position: sticky;
            top: 0;
-           z-index: 5;
+           z-index: 100;
            width: 100%;
        }
        .main-header {
@@ -1189,14 +1189,22 @@
            width: 100%;
        }
        .tab-con div {
-           height: 300px;
+           height: 350px;
+       }
+       .place_section {
+           position: relative;
+       }
+       .place_photo {
+           position: absolute;
+           left: 40px;
+           bottom: 20px
        }
    }
    
    #wrapper {
+       margin-left: 30px;
        width: 100%;
        display: flex;
-       justify-content: center;
    }
    
    #nav {
@@ -1262,8 +1270,9 @@
    
    @media screen and (max-width:765px) {
        .main {
-           width: 200px;
+           width: 100%
        }
+       .introduce {}
    }
    
    .student {

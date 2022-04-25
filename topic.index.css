@@ -5,17 +5,18 @@
    
    .header {
        position: sticky;
+       width: 100%;
        left: 0px;
        top: 0px;
-       margin-bottom: 30px;
        z-index: 5;
+       margin-bottom: 40px;
    }
    
    #logo.smallPanel img {
        position: relative;
        left: 0px;
        top: 0px;
-       height: 150px;
+       height: 140px;
        width: 150px;
        transition: all 2s;
    }
@@ -282,7 +283,6 @@
    #clockdiv {
        font-family: sans-serif;
        color: #fff;
-       display: inline-block;
        font-weight: 100;
        text-align: center;
        font-size: 30px;
@@ -305,6 +305,22 @@
    .smalltext {
        padding-top: 5px;
        font-size: 16px;
+   }
+   
+   @media screen and (max-width:1199px) {
+       .countdown {
+           display: block;
+           width: 100%;
+       }
+   }
+   
+   @media screen and (max-width:575px) {
+       .test {
+           width: 100%;
+       }
+       #clockdiv {
+           display: flex;
+       }
    }
    
    .junior,
@@ -833,6 +849,12 @@
        box-sizing: border-box;
    }
    
+   @media screen and (max-width:765px) {
+       .reserve-input {
+           width: 80%;
+       }
+   }
+   
    .head-teacher {
        width: 30%;
        text-align: center;
@@ -1166,6 +1188,9 @@
        .place_photo img {
            width: 100%;
        }
+       .tab-con div {
+           height: 300px;
+       }
    }
    
    #wrapper {
@@ -1220,6 +1245,7 @@
        padding: 15px;
        margin-left: 40px;
        border-radius: 10px;
+       overflow: hidden;
    }
    
    .introduce div:first-child {
@@ -1314,4 +1340,15 @@
    .teachers {
        margin-bottom: 30px;
        background-color: #3FC6F3;
+   }
+   
+   @media screen and (max-width: 575px) {
+       .student {
+           flex-direction: column;
+           align-items: center;
+       }
+       .flip-card {
+           width: 80%;
+           margin-top: 20px;
+       }
    }

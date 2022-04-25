@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="csshake.css">
     <script src="https://kit.fontawesome.com/85c9d9547b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+
     <script src="jquery-3.6.0.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="jsLogin.js"></script>
 
 
 
@@ -22,7 +28,7 @@
 
 <div class="header">
     <div class="main-header">
-        <div class="logo">
+        <div class="logo" id="logo">
             <a href="index.html"><img src="picture/8-1.png" alt="補習班商標"></a>
 
 
@@ -98,15 +104,17 @@
     </div>
     <div class="introduce">
         <div>
-            <h2>陳滔國文</h2>
+
+            <img src="./picture/s1.jpg" alt="">
             <p>累積二十年補教經驗的超強師資團隊，每人各司其職，身懷絕技。收集歷屆考題、海峽二岸题型變化，加以研究分析歸納。完全貼近並鎖定大考趨勢的教學密技，別人準備沒範圍。
+
         </div>
         <div>
-            <h2>飛哥英文</h2>
+            <img src="./picture/s2.jpg" alt="">
             <p>擁有訓練嚴格的教學團隊，不僅熟習教材、發音正確，更能掌握教學及考試重點。 國中部設有輔導讀書時段，針對學校範圍練習，同年級的學習問題也一併解答。 高中部安排輔導老師駐點，無論英文學習、升學經驗，全面為同學解惑。</p>
         </div>
         <div>
-            <h2>赫哲數學</h2>
+            <img src="./picture/s3.jpg" alt="">
             <p>其實從近年來的高中數學學測命題趨勢就不難看出端倪。繁雜的計算、神乎其技的解題技巧，逐漸地消失在我們眼前，而基礎觀念的延伸應用，需要讀題正確性的各類題型，更如雨後春筍般地出現在我們的視野中。也就是說，走邏輯推演、重理性思考的命題方向，已經變成我們老師以及學生在高中數學上不可忽視的準備目標。</p>
 
         </div>
@@ -181,6 +189,78 @@
         </table>
     </div>
 </div>
+<div class="teachers ">
+    <div class="junior_teachers ">
+        <div class="teacher_title "> <h2>國中老師</h2></div>
+        <div class="owl-carousel owl-theme ">
+            <div class="item ">
+                <p>赫哲 數學</p>
+                <img src="picture/r1.png " alt="上課圖 ">
+            </div>
+            <div class="item ">
+                <p>阿滴 英文</p>
+                <img src="picture/r2.png " alt="上課圖 " >
+            </div>
+            <div class="item ">
+                <p>理太 數學</p>
+                <img src="picture/r3.png " alt="學生圖 ">
+            </div>
+            <div class="item ">
+                <p>阿飛 英文</p>
+                <img src="picture/r4.png " alt="上課圖 " >
+            </div>
+            <div class="item ">
+                <p>陳滔 國文</p>
+                <img src="picture/r5.png " alt="教室圖 ">
+            </div>
+            <div class="item ">
+                <p>赫哲 數學</p>
+                <img src="picture/r1.png " alt="學生圖 ">
+            </div>
+            <div class="item ">
+                <p>阿滴 英文</p>
+                <img src="picture/r2.png " alt="教材圖 ">
+            </div>
+
+
+        </div>
+    </div>
+    <div class="senior_teachers ">
+        <div class="teacher_title "> <h2>高中老師</h2></div>
+         <div class="owl-carousel owl-theme ">
+            
+            <div class="item ">
+                <p>阿滴 英文</p>
+                <img src="picture/r2.png " alt="上課圖 " >
+            </div>
+            <div class="item ">
+                <p>理太 數學</p>
+                <img src="picture/r3.png " alt="學生圖 ">
+            </div>
+            <div class="item ">
+                <p>赫哲 數學</p>
+                <img src="picture/r1.png " alt="上課圖 ">
+            </div>
+            <div class="item ">
+                <p>阿飛 英文</p>
+                <img src="picture/r4.png " alt="上課圖 " >
+            </div>
+            <div class="item ">
+                <p>陳滔 國文</p>
+                <img src="picture/r5.png " alt="教室圖 ">
+            </div>
+            <div class="item ">
+                <p>赫哲 數學</p>
+                <img src="picture/r1.png " alt="學生圖 ">
+            </div>
+            <div class="item ">
+                <p>阿滴 英文</p>
+                <img src="picture/r2.png " alt="教材圖 ">
+            </div>
+
+    </div>
+</div>
+</div>
 <div class="end ">
     <div class="slogan ">
         <img src="picture/f2.png " alt="宣傳圖 ">
@@ -211,13 +291,13 @@
 </div>
 <script>
     $(function() {
-      
+
         $('.textHover').mousemove(function(e) {
             let theText = $(this).attr('data-text');
 
             $('#theDiv').text(theText).show().css({
-                left: e.clientX,
-                top: e.clientY,
+                left: e.clientX+10,
+                top: e.clientY+10,
             })
         }).mouseout(function() {
             $('#theDiv').hide();
@@ -230,10 +310,10 @@
         $('ul.subs').hide()
         $('.main').click(function() {
                 $('ul.subs').slideUp()
-                
+
                 if ($('+ul', this).css('display') == 'none') {
                     $('+ul', this).slideDown()
-                    
+
                 }
             })
             .mouseover(function() {
@@ -253,6 +333,28 @@
         });
 
     });
+</script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
 </script>
 
 

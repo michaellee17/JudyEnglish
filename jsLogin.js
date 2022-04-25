@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function() {
-    let header = document.getElementsByClassName("header");
-    if (document.documentElement.scrollTop >= 300) {
+    let header = document.getElementById("logo");
+    if (document.documentElement.scrollTop >= 400) {
         header.classList.add("smallPanel");
 
 

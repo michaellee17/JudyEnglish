@@ -25,11 +25,12 @@
 </head>
 
 <body>
+<div class="containerAll">
     <input type="checkbox" id="menu-switch">
 
 
-    <div class="header">
-        <div class="main-header">
+        <div class="header">
+            <div class="main-header">
             <div class="logo" id="logo">
                 <a href="index.html"><img src="picture/8-1.png" alt="補習班商標"></a>
 
@@ -276,73 +277,75 @@
             </div>
         </div>
     </div>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            margin: 10,
-            nav: false,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
-            }
-        })
-        AOS.init();
-    </script>
-    <script>
-        function getTimeRemaining(endtime) {
-            const total = Date.parse(endtime) - Date.parse(new Date());
-            const seconds = Math.floor((total / 1000) % 60);
-            const minutes = Math.floor((total / 1000 / 60) % 60);
-            const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-            const days = Math.floor(total / (1000 * 60 * 60 * 24));
-
-            return {
-                total,
-                days,
-                hours,
-                minutes,
-                seconds
-            };
-        }
-
-        function initializeClock(id, endtime) {
-            const clock = document.getElementById(id);
-            const daysSpan = clock.querySelector('.days');
-            const hoursSpan = clock.querySelector('.hours');
-            const minutesSpan = clock.querySelector('.minutes');
-            const secondsSpan = clock.querySelector('.seconds');
-
-            function updateClock() {
-                const t = getTimeRemaining(endtime);
-
-                daysSpan.innerHTML = t.days;
-                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-                if (t.total <= 0) {
-                    clearInterval(timeinterval);
-                }
-            }
-
-            updateClock();
-            const timeinterval = setInterval(updateClock, 1000);
-        }
-
-        const deadline = '2022-7-1'
-        initializeClock('clockdiv', deadline);
-    </script>
+</div>
+    
 </body>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+    AOS.init();
+</script>
+<script>
+    function getTimeRemaining(endtime) {
+        const total = Date.parse(endtime) - Date.parse(new Date());
+        const seconds = Math.floor((total / 1000) % 60);
+        const minutes = Math.floor((total / 1000 / 60) % 60);
+        const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+        const days = Math.floor(total / (1000 * 60 * 60 * 24));
+
+        return {
+            total,
+            days,
+            hours,
+            minutes,
+            seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        const clock = document.getElementById(id);
+        const daysSpan = clock.querySelector('.days');
+        const hoursSpan = clock.querySelector('.hours');
+        const minutesSpan = clock.querySelector('.minutes');
+        const secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            const t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        const timeinterval = setInterval(updateClock, 1000);
+    }
+
+    const deadline = '2022-7-1'
+    initializeClock('clockdiv', deadline);
+</script>
 
 </html>

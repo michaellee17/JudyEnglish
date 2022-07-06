@@ -3,7 +3,7 @@
        padding: 0;
    }
    .containerAll{
-    width:1440px;
+    max-width:1440px;
     margin:0 auto;
     background-color: papayawhip;
    }

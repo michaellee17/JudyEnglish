@@ -5,6 +5,7 @@
    .containerAll{
     width:1440px;
     margin:0 auto;
+    background-color: papayawhip;
    }
    
    .header {
@@ -59,7 +60,7 @@
    }
    
    .main-header {
-       background-color: rgb(251, 249, 249);
+       background-color: rgb(255, 255, 255);
        display: flex;
        justify-content: space-between;
        position: relative;
@@ -1374,4 +1375,10 @@
            width: 80%;
            margin-top: 20px;
        }
+   }
+   .bt-personal button{
+    padding: 5px;
+    color: black;
+    background-color: darkgray;
+    border: 2px solid #2b98eb;
    }

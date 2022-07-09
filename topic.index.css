@@ -1330,7 +1330,7 @@
    }
    
    .flip-card-front {
-       background-color: rgb(103, 170, 248);
+      
        color: black;
    }
    
@@ -1386,7 +1386,7 @@
     width: 70%;
     height: 50vh;
     background-color: #2b98eb;
-    background: linear-gradient(115deg,#7bf 50%,
+    background: linear-gradient(115deg,#7bf 70%,
     transparent 50%) center center / 100% 100%,
     url("./picture/h1.jpg") right center/ auto 100%;
    }
@@ -1420,4 +1420,8 @@
         display: flex;
         justify-content: center;
         margin-bottom:20px;
+    }
+    .flip-card-front img{
+        width:100%;
+        overflow: hidden;
     }

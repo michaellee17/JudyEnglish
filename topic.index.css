@@ -853,60 +853,59 @@
        justify-content: center;
        border: 3px solid rgb(250, 108, 14);
        box-sizing: border-box;
+       width:75%;
+       margin-top:15px;
+   }
+   .reserve-input table{
+    width:100%;
+    height:50vh;
+   }
+   .reserve-input table td{
+    font-size: 24px;
+    font-weight: 700;
+   }
+   .reserve-input table input{
+    font-size:24px;
+   }
+   .reserve-input table select{
+    font-size:24px;
+
    }
    
    @media screen and (max-width:765px) {
        .reserve-input {
            width: 80%;
        }
+       .reserve-input table td{
+        font-size: 18px;
    }
-   
-   .head-teacher {
-       width: 30%;
-       text-align: center;
-       margin-top: 40px;
-       border: 20px solid rgb(113, 227, 255);
-       border-radius: 10%;
-       padding: 10px;
-       margin-bottom: 30px;
+   .reserve-input table input{
+    font-size:18px;
    }
-   
-   .head-teacher.photo {
-       width: 100%;
+   .reserve-input table select{
+    font-size:18px;
+
    }
+         
+}
+@media screen and (max-width:368px) {
+    
+    .reserve-input table td{
+     font-size: 12px;
+}
+.reserve-input table input{
+ font-size:12px;
+}
+.reserve-input table select{
+ font-size:12px;
+
+}
+      
+}
    
-   .head-teacher-speech {
-       width: 100%;
-       margin: 0 auto;
-       padding-bottom: 10px;
-       padding-top: 20px;
-   }
+
    
-   .head-teacher-title {
-       width: 300px;
-       margin: 0 auto;
-       padding-bottom: 10px;
-   }
    
-   @media screen and (max-width:1199px) {}
-   
-   @media screen and (max-width: 991px) {
-       .head-teacher {
-           width: 40%;
-       }
-   }
-   
-   @media screen and (max-width:765px) {
-       .head-teacher {
-           width: 60%;
-       }
-   }
-   
-   @media screen and (max-width:575px) {
-       .head-teacher {
-           width: 80%;
-       }
-   }
    
    .why_title,
    .prepare_title,
@@ -1382,3 +1381,43 @@
     background-color: darkgray;
     border: 2px solid #2b98eb;
    }
+   .banner{
+    margin-top: 30px;
+    width: 70%;
+    height: 50vh;
+    background-color: #2b98eb;
+    background: linear-gradient(115deg,#7bf 50%,
+    transparent 50%) center center / 100% 100%,
+    url("./picture/8-1.png") right center/ auto 100%;
+   }
+   .container{
+   
+    height:100%;
+   
+   }
+   .banner-txt{
+    font-family: 'Noto Sans TC', sans-serif;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left:10px;
+    }
+    .banner-txt h2{
+        font-size: 40px;
+        border-bottom:1px solid #333;
+    }
+    .banner-txt h2 small{
+        display:block;
+        font-size: 27px;
+    }
+    .banner-txt p{
+        font-size: 18px;
+    }
+    .leader{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom:20px;
+    }

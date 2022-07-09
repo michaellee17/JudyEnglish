@@ -408,6 +408,36 @@
        display: flex;
        justify-content: space-evenly;
        background-color: rgb(255, 255, 255);
+       transform: translateY(0px);
+       transition:0.5s;
+      
+   }
+   .teacher_introduce{
+    margin-top: 20px;
+    position: relative;
+   }
+   .teacher_introduce h3{
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid black;
+   }
+   .teacher_introduce::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: -23px;
+    border-top: 90px solid transparent;
+    border-left: 144px solid #fff;
+    border-right: 144px solid #fff;
+    transform: translateY(-100%);
+    
+
+
+   }
+   .teacher:hover, .hots:hover{
+    transform: translateY(-50px);
    }
    
    .col img {
@@ -433,6 +463,11 @@
    }
    
    @media screen and (max-width:1199px) {
+    .teacher_introduce::before{
+        display: none;
+    
+    
+       }
        .members,
        .subject {
            width: 80%;
@@ -461,6 +496,7 @@
    }
    
    @media screen and (max-width:767px) {
+   
        .members,
        .subject {
            width: 80%;
@@ -1425,3 +1461,4 @@
         width:100%;
         overflow: hidden;
     }
+    

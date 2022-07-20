@@ -1422,11 +1422,12 @@
     width: 70%;
     height: 50vh;
     background-color: #2b98eb;
-    background: linear-gradient(115deg,#7bf 70%,
+    background: linear-gradient(55deg,#7bf 50%,
     transparent 50%) center center / 100% 100%,
-    url("./picture/h1.jpg") right center/ auto 100%;
+    url(./picture/h1.jpg) right center/ auto 100%;
    }
    .container{
+    
    
     height:100%;
    

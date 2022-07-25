@@ -1,6 +1,7 @@
    * {
        margin: 0;
        padding: 0;
+       font-family: 'Noto Sans TC', sans-serif;
    }
    .containerAll{
     max-width:1440px;
@@ -693,6 +694,7 @@
    
    .slogan img {
        width: 100%;
+       vertical-align: middle;
    }
    
    .col {
@@ -1462,4 +1464,74 @@
         width:100%;
         overflow: hidden;
     }
-    
+    .main-footer{
+        padding:150px 0 0;
+        background: linear-gradient(-20deg,#3f5494,#08c7a5);
+    }
+    .main-footer .container{
+        display:flex;
+        width: 80%;
+        margin: auto;
+    }
+    .footer-item{
+        width: 0;
+        flex-grow:1;
+        margin:0 20px;
+    }
+    .footer-item h4{
+        font-size: 24px;
+        color:#fff;
+        border-bottom: 1px dotted #fff;
+        margin-bottom: .5em;
+        padding-bottom: .5em;
+    }
+    .footer-item nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-item nav a{
+        color: #fff;
+        line-height: 1.4;
+        text-decoration: none;
+        padding:5px 0;
+    }
+    .footer-item nav a:hover{
+        color:#fa0;
+
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;
+        margin: 150px 0 0;
+        padding:10px 0px;
+        background-color: #3e5293;
+        color:#70f6df;
+    }
+    .footer-subs{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-subs form{
+        display: flex;
+        width: 100%;
+        margin:auto 0;
+    }
+    .footer-subs input[type="text"],.footer-subs input[type="submit"]{
+        border: none;
+        padding:5px 10px;
+    }
+    .footer-subs input[type="text"]{
+        width:0;
+        flex-grow: 1;
+    }
+    .footer-subs input[type="submit"]{
+        color:#70f6df;
+        background-color: #3e5293;
+
+    }
+    .index-carousel .item{
+        border: 5px black dotted ;
+    }
+    .index-carousel{
+        background-color: black;
+    }

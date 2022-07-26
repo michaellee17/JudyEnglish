@@ -894,6 +894,7 @@
        box-sizing: border-box;
        width:75%;
        margin-top:15px;
+      
    }
    .reserve-input table{
     width:100%;
@@ -904,11 +905,17 @@
     font-weight: 700;
    }
    .reserve-input table input{
+    text-align: center;
+    border-radius: 200px;
     font-size:24px;
    }
    .reserve-input table select{
     font-size:24px;
 
+   }
+   #btnSend{
+    padding: 8px;
+    background-color: transparent;
    }
    
    @media screen and (max-width:765px) {
@@ -1560,4 +1567,22 @@
     }
     .index-carousel{
         background-color: black;
+    }
+    .main-meun{
+        position: relative;
+    }
+    .main-meun::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        height:0;
+        bottom: -5px;
+        border-bottom: 5px double black;
+        transition: .3s;
+        
+    }
+    .main-meun:hover::after{
+        left: 0;
+        right:0;
     }

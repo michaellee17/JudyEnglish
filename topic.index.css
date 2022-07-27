@@ -6,8 +6,8 @@
    .containerAll{
     max-width:1440px;
     margin:0 auto;
-    background-color: papayawhip;
-   }
+    background-image: linear-gradient(-45deg,#fffaf0,#f8c3c1);
+    }
    
    .header {
        position: sticky;
@@ -1586,3 +1586,79 @@
         left: 0;
         right:0;
     }
+    .student_recommand{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin: 100px auto;
+        /* background-color: #999; */
+        
+    }
+    .student_recommand .item{
+        width: 30%;
+        margin: 0 15px;
+        text-align: center;
+        border:10px solid #f9cec2;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 10px 20px 50px #f7b6a7;
+    }
+    .student_recommand .item h3{
+        color:#f5afac;
+    }
+    .student_recommand .item p{
+        color:#ccc;
+    }
+    .student_recommand .item .txt{
+        padding: 20px 20px 2em;
+
+    }
+    @keyframes ss{
+        0%{transform: rotate(-10deg);}
+        100%{transform: rotate(10deg);}
+    }
+    .student_recommand .item .icon{
+        font-size: 85px;
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+        margin:-75px auto 0;
+        line-height: 150px;
+        border-radius: 50%;
+        color:#f5afac;
+        position: relative;
+    }
+    .student_recommand .item .icon::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-top: 10px solid #f5afac;
+        border-right: 10px solid #f5afac;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        left: -10px;
+        top: -10px;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+    }
+    .student_recommand .item:hover .fa{
+        animation: ss .2s linear infinite alternate;
+    }
+    .student_recommand .student_photo{
+       border: 10px solid #fff;
+        width: 30%;
+        border-radius: 200px 200px 0 0;
+        overflow: hidden;
+    }
+    .student_recommand .student_photo img{
+        width: 100%;
+        vertical-align: middle;
+
+    }
+    h2{
+        font-size: 36px;
+    }
+    

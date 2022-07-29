@@ -745,6 +745,8 @@
    }
    
    .target {
+    margin-top: 40px;
+
        margin-bottom: 60px;
    }
    
@@ -1327,6 +1329,7 @@
    }
    
    .introduce div {
+      
     
        
        background: #F2F2F2;
@@ -1346,6 +1349,7 @@
    .introduce div p{
     width: 100%;
     margin: 15px auto;
+    line-height: 1.5;
 
    }
    .grade_subject p ::before{
@@ -1687,4 +1691,85 @@
     h2{
         font-size: 36px;
     }
+    .gifted,.slow{
+        position: relative;
+    }
+    .gifted-text,.slow-text{
+        
+
+        position: absolute;
+        top:50px;
+        left: 0;
+        opacity: 0;
+        transform: scale(0);
+        transition: .5s;
+        background-color: rgba(0,0,0,.6);
+    }
+    .gifted:hover .gifted-text,
+    .slow:hover .slow-text{
+        transform: scale(1);
+        opacity: 1;
+        color: #fff;
+
+    }
+    .recongnize p{
+        line-height: 1.5;
+        
+    }
+    .story_text :first-child::first-letter,.education_text :first-child::first-letter{
+        font-size: 32px;
+        float: left;
+        padding-right: 2px;
+        font-weight: 700;
+    }
+    .story_text p{
+        position: relative;
+    }
+    .story_text :first-child::before{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 10px solid #CCC;
+        left: -60px;
+        top: -73px;
+        transform: rotate(32deg);
+        Z-INDEX: -1;
+    }
+    .story_text :first-child::after{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 10px solid #fffaf0;
+        left: -60px;
+        top: -73px;
+        transform: rotate(352deg);
+        Z-INDEX: -1;
+    }
+    .education_text :first-child::before{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 10px solid #CCC;
+        bottom: -54px;
+        right: -50px;
+        transform: rotate(32deg);
+        Z-INDEX: -1;
+    }
+    .education_text :first-child::after{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 10px solid #fffaf0;
+        bottom: -54px;
+    right: -50px;
+        transform: rotate(352deg);
+        Z-INDEX: -1;
+    }
+   
+    
+
     

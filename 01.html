@@ -334,9 +334,10 @@
             let theText = $(this).attr('data-text');
 
             $('#theDiv').text(theText).show().css({
-                left: e.clientX+10,
-                top: e.clientY+10,
+                left: e.offsetX,
+                top: e.offsetY
             })
+            
         }).mouseout(function() {
             $('#theDiv').hide();
         });
@@ -367,7 +368,10 @@
         $('.subs li').click(function() {
             $(this).addClass('pre').siblings().removeClass('pre');
             var index = $(this).index();
-            $(".introduce div ").eq(index).show().siblings().hide();
+            console.log(index);
+            var a =$(".introduce div")
+            console.log(a);
+            $(".introduce>div").eq(index).show().siblings().hide();
         });
 
     });

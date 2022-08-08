@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{}
+        .item{
+            height: 200px;
+            background-color: #aaa;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;            
+        }
+        @media screen and (min-width:768px) {
+            .wrap{
+                margin: auto;
+                width: 720px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .item{
+                width: 220px;
+            }
+        }
+        @media screen and (min-width:996px){
+            .wrap{
+                width: 960px;
+            }
+            .item{
+                width: 220px;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .wrap{
+                width: 1200px;
+            }
+            .item{
+                width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+
+
+
+</body>
+</html>

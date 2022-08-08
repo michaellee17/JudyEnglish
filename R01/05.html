@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            background-color: #ccc;
+            margin: auto;
+        }
+        .item{
+            --colgap: 15px;
+            height: 200px;
+            background-color: #fa0;
+            font-size: 50px;
+            margin: var(--colgap);
+            /* margin-left: var(--colgap);
+            margin-right: var(--colgap);
+            margin-bottom: calc( var(--colgap) * 2 ); */
+
+        }
+        @media screen and (min-width:768px) {
+            .wrap{
+                display: flex;
+                flex-wrap: wrap;            
+            }
+            .item{
+                width: calc(100% / 3 - var(--colgap) * 2);
+            }
+        }
+        @media screen and (min-width:992px) {
+            .item{
+                width: calc(100% / 4 - var(--colgap) * 2);
+
+            }
+        }
+        @media screen and (min-width:1200px) {
+            .item{
+                width: calc(100% / 6 - var(--colgap) * 2);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+
+</body>
+</html>
